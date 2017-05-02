@@ -1,0 +1,38 @@
+\usepackage{amssymb, amsfonts, amsmath, amsthm}
+\usepackage{epsfig,lpic,wrapfig}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage[top=0.9in, bottom=0.9in,left=0.9in, right=0.9in, paperwidth=6in, paperheight=9in]{geometry}
+\usepackage[colorlinks=true,
+citecolor=black,
+linkcolor=black,
+anchorcolor=black,
+filecolor=black,
+menucolor=black,
+urlcolor=black%
+]{hyperref}
+\hypersetup{pdftitle={Сколько деревьев в графе},
+pdfauthor={Антон Петрунин}}
+\def\man{\includegraphics[scale=.021]{pics/man}}
+\def\dog{\includegraphics[scale=.020]{pics/dog}}
+\def\home{\includegraphics[scale=.021]{pics/home}}
+\def\beer{\includegraphics[scale=.008]{pics/beer}}
+\def\robot{\includegraphics[scale=.1]{pics/robot-icon-30498}}
+\usepackage{indentfirst}
+
+\newcommand{\nofootnote}[1]{%
+\begingroup\def\thefootnote{}\footnotetext{#1}\endgroup}
+
+%THEOREM
+\newcounter{thm}[section]
+\renewcommand{\thethm}{\thechapter.\arabic{thm}}
+\def\claim#1{\par\medskip\noindent\refstepcounter{thm}\hbox{\bf  #1.}
+\it\ %\ignorespaces
+}
+\def\endclaim{
+\par\medskip}
+\newenvironment{thm}{\claim}{\endclaim}
