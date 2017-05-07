@@ -16,13 +16,6 @@ filecolor=black,
 menucolor=black,
 urlcolor=black%
 ]{hyperref}
-\hypersetup{pdftitle={Сколько деревьев в графе},
-pdfauthor={Антон Петрунин}}
-\def\man{\includegraphics[scale=.021]{pics/man}}
-\def\dog{\includegraphics[scale=.020]{pics/dog}}
-\def\home{\includegraphics[scale=.021]{pics/home}}
-\def\beer{\includegraphics[scale=.008]{pics/beer}}
-\def\robot{\includegraphics[scale=.1]{pics/robot-icon-30498}}
 \usepackage{indentfirst}
 
 \newcommand{\nofootnote}[1]{%
@@ -37,3 +30,6 @@ pdfauthor={Антон Петрунин}}
 \def\endclaim{
 \par\medskip}
 \newenvironment{thm}{\claim}{\endclaim}
+
+\newcommand*{\z}[1]{#1\nobreak\discretionary{}%
+            {\hbox{$\mathsurround=0pt #1$}}{}}
